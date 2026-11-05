@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <display-name>News Web Application</display-name>
+
+    <!-- 1. 之前的测试 Servlet -->
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>com.djt.servlet.TestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/TestServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- 2. 重点：刚刚写的图表数据 Servlet -->
+    <servlet>
+        <servlet-name>NewsSvlt</servlet-name>
+        <servlet-class>com.djt.servlet.NewsSvlt</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewsSvlt</servlet-name>
+        <url-pattern>/news</url-pattern>
+    </servlet-mapping>
+
+</web-app>
